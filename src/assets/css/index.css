@@ -29,7 +29,11 @@
 	--color-dark-grey:#9B9595;
   --color-transparent: transparent;
   --color-error: #fd3d5d;
+  --color-light-red:rgb(255, 157, 157);
+  --color-light-green:rgb(193, 255, 157);
+  --color-green:green;
   --shadow:0px 0px 5px rgb(0,0,0,0.5);
+  --white-shadow:0px 0px 5px rgba(255, 255, 255, 0.712);
   --low-opacity:0.6;
 
   /* sizes */
@@ -46,6 +50,9 @@
   --default-border:1px solid var(--color-main-3);
   --input-border:1px solid var(--color-main-4);
   --white-border:1px solid var(--color-white);
+  --white-border-dashed:1px dashed var(--color-white);
+  --red-border:1px solid red;
+  --green-border:1px solid green;
   --red-border:1px solid var(--color-error);
   --hover-border: inset 1px 1px 1px var(--color-white);
 

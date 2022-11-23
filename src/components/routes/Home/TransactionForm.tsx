@@ -13,7 +13,7 @@ export default function TransactionForm(props) {
     errorMessage,
   } = props;
   return (
-    <>
+    <FormContainer>
       <StyledForm onSubmit={submitTransaction}>
         <Input
           className="l1"
@@ -31,6 +31,7 @@ export default function TransactionForm(props) {
         <Input
           placeholder="Valor"
           type="number"
+          min={0.01}
           value={transactionData.value}
           onChange={(e) =>
             setTransactionData({ ...transactionData, value: e.target.value })
@@ -54,9 +55,14 @@ export default function TransactionForm(props) {
             : "Saldo insuficiente"
         }
       />
-    </>
+    </FormContainer>
   );
 }
+const FormContainer = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+`;
 
 const StyledForm = styled(Form)`
   button {
@@ -67,9 +73,10 @@ const StyledForm = styled(Form)`
     max-width: 25%;
     border: var(--default-border);
     color: var(--color-black);
+    margin: 0 10px 0 10px;
   }
   .l1 {
-    max-width: 40%;
+    max-width: 100%;
   }
   display: flex;
   flex-direction: row;

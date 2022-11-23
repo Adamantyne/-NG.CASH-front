@@ -8,7 +8,7 @@ const HomeScreen = styled.section`
   flex-direction: column;
   align-items: center;
   padding: calc(var(--header-heigth) + 20px) 20px 20px 20px;
-  background-color: var(--color-main-1);
+  background-color: var(--color-main-2);
 `;
 
 export default HomeScreen;
