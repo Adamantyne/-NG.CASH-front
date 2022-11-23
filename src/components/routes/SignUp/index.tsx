@@ -18,11 +18,10 @@ export default function SignUp() {
   async function submitData(e) {
     e.preventDefault();
     try {
-      const data = await postRequisition("sign-up", contextData, signUpData);
+      await postRequisition("sign-up", contextData, signUpData);
       if (signUpData.password !== signUpData.confirmPassword) {
         throw new Error("repeat your password correctly");
       }
-      console.log(data);
       navigate("/");
     } catch (error) {
       console.log(error);

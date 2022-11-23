@@ -35,9 +35,10 @@
   /* sizes */
   --auth-max-width:460px;
   --objeects-height: 40px;
+  --header-heigth: 50px;
 
   /* times */
-  --hover-time:0.4s;
+  --hover-time:0.2s;
   
   /* borders*/
   --border-radious-1:8px;
@@ -45,7 +46,8 @@
   --default-border:1px solid var(--color-main-3);
   --input-border:1px solid var(--color-main-4);
   --white-border:1px solid var(--color-white);
-  --hover-border: inset 1px 1px 1px var(--color-hover);
+  --red-border:1px solid var(--color-error);
+  --hover-border: inset 1px 1px 1px var(--color-white);
 
   /* z-index*/
   --z-index--1: -1;
@@ -63,7 +65,7 @@ body {
 }
 
 .root {
-  min-width: var(--min-width);
+  min-width: 300px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

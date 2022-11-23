@@ -5,6 +5,10 @@ const HomeScreen = styled.section`
   height: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(var(--header-heigth) + 20px) 20px 20px 20px;
+  background-color: var(--color-main-1);
 `;
 
 export default HomeScreen;
