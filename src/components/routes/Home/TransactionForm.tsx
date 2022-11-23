@@ -31,7 +31,8 @@ export default function TransactionForm(props) {
         <Input
           placeholder="Valor"
           type="number"
-          min={0.01}
+          min={1}
+          step=".01"
           value={transactionData.value}
           onChange={(e) =>
             setTransactionData({ ...transactionData, value: e.target.value })
@@ -59,15 +60,19 @@ export default function TransactionForm(props) {
   );
 }
 const FormContainer = styled.div`
+padding: 0 20px 0 20px;
+width: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
 `;
 
 const StyledForm = styled(Form)`
+  width: 100%;
   button {
     max-width: 20%;
     min-width: 100px;
+    margin: 0 10px 0 10px;
   }
   input {
     max-width: 25%;
@@ -81,5 +86,5 @@ const StyledForm = styled(Form)`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `;
